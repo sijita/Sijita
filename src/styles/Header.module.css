@@ -1,0 +1,41 @@
+.title1 {
+    font-weight: 600; 
+    font-size: 6vw; 
+    color: #fff;
+    letter-spacing: 0.20em;
+}
+
+.title2 {
+    font-weight: 100;
+    font-size: 2vw; 
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 0.15em;
+}
+
+.title3 {
+    font-weight: 700; 
+    font-size: 9vw; 
+    color: #fff;
+    line-height: 90%;
+}
+
+.title4 {
+    font-weight: 700; 
+    font-size: 9vw; 
+    color: #BAFF29;
+    line-height: 90%;    
+}
+
+.brackets {
+    color: #BAFF29;
+}
+
+@media (max-width: 575.98px) { 
+    .title1 {
+        font-size: 9vw
+    }
+
+    .title2 {
+        font-size: 3vw;
+    }
+ }
