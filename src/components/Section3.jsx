@@ -41,7 +41,7 @@ export default function Section3() {
         <section id="Proyectos">
             <div className="container p-5 mt-5 mb-4">
                 <XyzTransition appearVisible xyz="fade-100% left-100% duration-15">
-                    <h2 style={{ color: '#f6fafd' }}>Proyectos</h2>
+                    <h2 className="d-inline-block align-middle" style={{ color: '#f6fafd', overflow: "hidden"}}>Proyectos</h2>
                 </XyzTransition>
                 <div className="row row-cols-1 row-cols-lg-2 p-0" style={{ overflow: 'hidden' }}>
                     <XyzTransition appearVisible xyz="fade-100% small duration-15">

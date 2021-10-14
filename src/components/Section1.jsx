@@ -16,10 +16,10 @@ export default function Section1() {
         <section id="SobreMi">
             <div className="container p-5 mb-5">
                 <XyzTransition appearVisible xyz="fade-100% left-100% duration-15">
-                    <h2 style={{ color: '#f6fafd' }}>Sobre mi</h2>
+                    <h2 className="d-inline-block align-middle" style={{ color: '#f6fafd', overflow: 'hidden' }}>Sobre mi</h2>
                 </XyzTransition>
                 <div className="row row-cols-1 row-cols-lg-2 justify-content-center">
-                    <div className="col fs-5 mt-4 mb-4" style={{ color: '#96a4b3', textAlign: 'justify'}}>
+                    <div className="col fs-5 mt-4 mb-4" style={{ color: '#96a4b3', overflow: 'hidden', textAlign: 'justify'}}>
                         <XyzTransition appearVisible xyz="fade-100% down-25% duration-20 delay-5">
                             <div>
                                 Mi nombre es <span style={color}>Simón Jiménez Tamayo,</span> tengo 20 años y soy estudiante de 6to semestre de
