@@ -67,7 +67,7 @@ export function Footer() {
                         <input type="hidden" name="subject" value="Nuevo mensaje de la pagina web"/>
                         <input type="hidden" name="redirect" value="https://web3forms.com/success"/>
                         <input type="checkbox" name="botcheck" className="d-none" />
-                        <XyzTransition appearVisible xyz="fade-100% up-100% duration-20 delay-10">
+                        <XyzTransition appearVisible xyz="fade-100% up-100% duration-30">
                           <div>
                             <h2 className="mb-5 text-white">¡Envíame un correo!</h2>
                           </div>

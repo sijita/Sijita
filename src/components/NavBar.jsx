@@ -27,7 +27,7 @@ export function NavBar() {
                 <NavbarToggler className="border-0" onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="mx-auto align-items-center mt-0 mt-1 mt-sm-1 mb-sm-1" navbar>
-                        <XyzTransition appearVisible xyz="fade-100% duration-20 small-100% delay-20">    
+                        <XyzTransition appearVisible xyz="fade-100% duration-20 small-100% delay-5">    
                             <div>
                                 <NavItem className="nav-item mx-4">
                                         <NavLink className={"fw-light fs-4 " + Styles.navLink } href="#SobreMi">
@@ -36,7 +36,7 @@ export function NavBar() {
                                 </NavItem>
                             </div>
                         </XyzTransition>
-                        <XyzTransition appearVisible xyz="fade-100% duration-20 small-100% delay-25">
+                        <XyzTransition appearVisible xyz="fade-100% duration-20 small-100% delay-10">
                             <div>
                                 <NavItem className="nav-item mx-4">
                                     <NavLink className={"fw-light fs-4 " + Styles.navLink } href="#Experiencia">
@@ -54,7 +54,7 @@ export function NavBar() {
                                 </NavItem>
                             </div>
                         </XyzTransition>
-                        <XyzTransition appearVisible xyz="fade-100% duration-20 small-100% delay-25">
+                        <XyzTransition appearVisible xyz="fade-100% duration-20 small-100% delay-10">
                             <div>
                                 <NavItem className="nav-item mx-4">
                                     <NavLink className={"fw-light fs-4 " + Styles.navLink } href="#Proyectos">
@@ -63,7 +63,7 @@ export function NavBar() {
                                 </NavItem>
                             </div>
                         </XyzTransition>
-                        <XyzTransition appearVisible xyz="fade-100% duration-20 small-100% delay-20">
+                        <XyzTransition appearVisible xyz="fade-100% duration-20 small-100% delay-5">
                             <div>
                                 <NavItem className="nav-item mx-4">
                                     <NavLink className={"fw-light fs-4 " + Styles.navLink } href="#Contacto">
