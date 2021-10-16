@@ -15,9 +15,9 @@ export default function Section2() {
                 </XyzTransition>
                     <div className="mt-4 container" style={{ color: '#96a4b3', overflow: "hidden" }}>
                         <ul className="row row-cols-1 row-cols-lg-2 p-0" style={{listStyle: 'none'}}>
-                            <XyzTransition appearVisible xyz="fade-100% down-50% duration-20">
+                            <XyzTransition appearVisible xyz="fade-100% left-50% duration-20">
                                 <li className="mt-4 text-sm-center">
-                                    <span className="fs-4" style={color}>Freelancer (<span class="text-white">Diseñador gráfico</span>)</span> : 
+                                    <span className="fs-4" style={color}>Freelancer (<span className="text-white">Diseñador gráfico</span>)</span> : 
                                     <br />
                                     <span className="text-muted" style={{ fontFamily: 'monospace' }}>2013 - PRESENTE</span><br /><br />
                                     <span className="font-monospace fs-5" style={color}>1.&nbsp;</span> 
@@ -36,9 +36,9 @@ export default function Section2() {
                                     </span>
                                 </li>
                             </XyzTransition>
-                            <XyzTransition appearVisible xyz="fade-100% down-50% duration-20">
+                            <XyzTransition appearVisible xyz="fade-100% right-50% duration-20">
                                 <li className="mt-4 text-sm-center">
-                                    <span className="fs-4" style={color}>Freelancer (<span class="text-white">Desarrollador web</span>)</span> : 
+                                    <span className="fs-4" style={color}>Freelancer (<span className="text-white">Desarrollador web</span>)</span> : 
                                     <br />
                                     <span className="text-muted" style={{ fontFamily: 'monospace' }}>2019 - PRESENTE</span><br /><br />
                                     <span className="font-monospace fs-5" style={color}>1.&nbsp;</span> 

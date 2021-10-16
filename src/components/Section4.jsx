@@ -20,7 +20,7 @@ export default function Section4() {
                             <h1 className="fs-5 my-2" style={cardStyle}>Diseños increibles</h1>
                             <IoColorWandSharp className="fs-2 my-3" style={cardStyle} />
                             <p className="my-2" style={cardStyle}>
-                                Diseños creativos e innovadores para páginas atractivas
+                                Páginas con diseños creativos y atractivos
                             </p>
                         </div>
                     </XyzTransition>
