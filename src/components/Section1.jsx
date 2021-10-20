@@ -74,7 +74,7 @@ export default function Section1() {
                         </div>
                     <XyzTransition appearVisible xyz="fade-100% down-25% duration-25">
                         <div className="col mt-4 text-center">
-                            <img src={fotoPersonal} alt="Foto personal" width="420" className="rounded p-2 img-fluid" style={{ border: '1px solid #BAFF29'}} />
+                            <img src={fotoPersonal} alt="Foto personal" width="420" className="rounded p-2 img-fluid" style={{ border: '1px solid #BAFF29' }} />
                         </div>
                     </XyzTransition>
                 </div>
