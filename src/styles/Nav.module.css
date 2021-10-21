@@ -2,6 +2,12 @@
     border-bottom: 1px solid #b9fe29
 }
 
+@media (max-width: 575.98px) { 
+    .navLink {
+        font-size: 22px;
+    }
+ }
+
 @media (min-width: 575.98px) { 
     .navLink {
         font-size: 24px;
