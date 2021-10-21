@@ -4,7 +4,6 @@ import { XyzTransition } from '@animxyz/react';
 
 export function Header() {
     return (
-
         <header className="d-flex flex-column align-items-center justify-content-center vh-100" style={{ overflow: "hidden" }}>
             <div className="text-center">
                 <XyzTransition appear xyz="fade-100% front-5 big-100% duration-20">

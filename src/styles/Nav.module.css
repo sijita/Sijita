@@ -1,3 +1,36 @@
 .navLink:hover {
     border-bottom: 1px solid #b9fe29
 }
+
+@media (min-width: 575.98px) { 
+    .navLink {
+        font-size: 24px;
+    }
+ }
+
+
+ @media (min-width: 767.98px) { 
+    .navLink {
+        font-size: 20px;
+    }
+ }
+
+ @media (min-width: 991.98px) { 
+    .navLink {
+        font-size: 24px;
+    }
+ }
+
+ @media (min-width: 1199.98px) { 
+    .navLink {
+        font-size: 24px;
+    }
+ }
+
+ @media (min-width: 1399.98px) { 
+    .navLink {
+        font-size: 24px;
+    }
+ }
+
+ 

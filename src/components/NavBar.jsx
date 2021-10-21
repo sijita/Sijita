@@ -25,12 +25,12 @@ export function NavBar() {
             <div className="container-fluid p-2">
                 <NavbarBrand className="p-1 m-0 d-md-none" style={{ border: '1px solid #b9fe29' }} href="/"><img src={Logo} alt="Logo" width="100px" /></NavbarBrand>
                 <NavbarToggler className="border-0" onClick={toggle} />
-                <Collapse isOpen={isOpen} navbar>
-                    <Nav className="mx-auto align-items-center mt-0 mt-1 mt-sm-1 mb-sm-1" navbar>
+                <Collapse className="justify-content-center" isOpen={isOpen} navbar>
+                    <Nav className="align-items-center mt-0 mt-1 mt-sm-1 mb-sm-1" navbar>
                         <XyzTransition appearVisible xyz="fade-100% duration-20 small-100% delay-5">    
                             <div>
                                 <NavItem className="nav-item mx-4">
-                                        <NavLink className={"fw-light fs-4 " + Styles.navLink } href="#SobreMi">
+                                        <NavLink className={"fw-light " + Styles.navLink } href="#SobreMi">
                                             Sobre mi
                                         </NavLink>
                                 </NavItem>
@@ -39,7 +39,7 @@ export function NavBar() {
                         <XyzTransition appearVisible xyz="fade-100% duration-20 small-100% delay-10">
                             <div>
                                 <NavItem className="nav-item mx-4">
-                                    <NavLink className={"fw-light fs-4 " + Styles.navLink } href="#Experiencia">
+                                    <NavLink className={"fw-light " + Styles.navLink } href="#Experiencia">
                                         Experiencia
                                     </NavLink>
                                 </NavItem>
@@ -57,7 +57,7 @@ export function NavBar() {
                         <XyzTransition appearVisible xyz="fade-100% duration-20 small-100% delay-10">
                             <div>
                                 <NavItem className="nav-item mx-4">
-                                    <NavLink className={"fw-light fs-4 " + Styles.navLink } href="#Proyectos">
+                                    <NavLink className={"fw-light " + Styles.navLink } href="#Proyectos">
                                         Trabajos
                                     </NavLink>
                                 </NavItem>
@@ -66,7 +66,7 @@ export function NavBar() {
                         <XyzTransition appearVisible xyz="fade-100% duration-20 small-100% delay-5">
                             <div>
                                 <NavItem className="nav-item mx-4">
-                                    <NavLink className={"fw-light fs-4 " + Styles.navLink } href="#Contacto">
+                                    <NavLink className={"fw-light " + Styles.navLink } href="#Contacto">
                                         Contacto
                                     </NavLink>
                                 </NavItem>
