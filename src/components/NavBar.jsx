@@ -23,7 +23,7 @@ export function NavBar() {
     return (
         <Navbar className="navbar-dark p-1 text-center" expand="md">
             <div className="container-fluid p-2">
-                <NavbarBrand className="p-1 m-0 d-md-none" style={{ border: '1px solid #b9fe29' }} href="/"><img src={Logo} alt="Logo" width="100px" /></NavbarBrand>
+                <NavbarBrand className="p-1 m-0 d-md-none" href="/"><img src={Logo} alt="Logo" width="100px" /></NavbarBrand>
                 <NavbarToggler className="border-0" onClick={toggle} />
                 <Collapse className="justify-content-center" isOpen={isOpen} navbar>
                     <Nav className="align-items-center mt-0 mt-1 mt-sm-1 mb-sm-1" navbar>
