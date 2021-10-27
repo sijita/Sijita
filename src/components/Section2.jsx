@@ -28,12 +28,12 @@ export default function Section2() {
     return (
         <section id="Experiencia">
             <div className="container p-5 mt-5 mb-5">
-                <XyzTransition appearVisible xyz="fade-100% left-100% duration-15">
+                <XyzTransition appearVisible xyz="fade-100% left-100% duration-10">
                     <h2 className="d-inline-block align-middle" style={{ color: '#f6fafd', overflow: "hidden"}}>Experiencia</h2>
                 </XyzTransition>
                     <div className="mt-4 container p-0" style={{ color: '#96a4b3', overflow: "hidden" }}>
                         <ul className="row row-cols-1 row-cols-lg-2 p-0" style={{listStyle: 'none'}}>
-                            <XyzTransition appearVisible xyz="fade-100% left-50% duration-10">
+                            <XyzTransition appearVisible xyz="fade-100% left-50% duration-15">
                                 <li className="mt-4 text-sm-center">
                                     <ul className="fs-4" style={color}>Freelancer (<span className="text-white">Diseñador gráfico</span>)</ul>
                                     <ul className="text-muted" style={{ fontFamily: 'monospace' }}>2013 - PRESENTE</ul>

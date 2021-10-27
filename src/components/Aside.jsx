@@ -11,11 +11,17 @@ export function Aside() {
     window.onscroll = function() {myFunction()};
 
     function myFunction() {
-    if (document.body.scrollTop > 750 || document.documentElement.scrollTop > 750) {
-        document.getElementById("myP").classList.remove("d-none");
-    } else {
-        document.getElementById("myP").classList.add("d-none");
-    }
+
+        const boton = document.getElementById("upBtn")
+        const hr = document.getElementById("upHr")
+
+        if (document.body.scrollTop > 750 || document.documentElement.scrollTop > 750) {
+            boton.classList.remove("d-none");
+            hr.classList.remove("d-none");
+        }else {
+            boton.classList.add("d-none");
+            hr.classList.add("d-none");
+        }
     }
 
     let onClickUp = () => {
@@ -60,22 +66,21 @@ export function Aside() {
                 </XyzTransition>
                 <XyzTransition appear xyz="fade-100% down-100% duration-10 delay-2">
                     <li>
-                        <hr width="2" size="100" className="mx-auto mb-0" style={{ backgroundColor: '#BAFF29', marginLeft: '10px' }} />
+                        <hr width="2" size="100" className="mx-auto mb-0" style={{ backgroundColor: '#BAFF29' }} />
                     </li>
                 </XyzTransition>
             </ul>
             <ul className="text-center d-flex flex-column p-0 fixed-bottom mb-0 d-none d-sm-block" style={{ listStyle: 'none', width: 60, left: 'auto'  }}>
-                
-                <XyzTransition appear xyz="fade-100% down-100% duration-20 delay-4">
+                <XyzTransition id="upBtn" appearVisible xyz="fade-100% down-100% duration-20 delay-4" className="d-none">
                     <li className="my-4">
-                        <button id="myP" className={"btn btn-link m-0 p-0 up d-none " + Styles.focusable} onClick={onClickUp}>
+                        <button className={"btn btn-link m-0 p-0 up " + Styles.focusable} onClick={onClickUp}>
                             <CgArrowUpR className="fs-4" style={{ color: '#96a4b3' }}></CgArrowUpR>
                         </button>
                     </li>
                 </XyzTransition>
-                <XyzTransition appear xyz="fade-100% down-100% duration-10 delay-2">
+                <XyzTransition id="upHr" appearVisible xyz="fade-100% down-100% duration-20 delay-2" className="d-none">
                     <li>
-                        <hr width="2" size="100" className="mx-auto mb-0" style={{ backgroundColor: '#BAFF29', marginLeft: '10px' }} />
+                        <hr width="2" size="100" className="mx-auto mb-0" style={{ backgroundColor: '#BAFF29' }} />
                     </li>
                 </XyzTransition>
             </ul>

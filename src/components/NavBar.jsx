@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "@animxyz/core";
 import { XyzTransition } from '@animxyz/react';
 import { Link } from "react-router-dom";
-import Logo from '../images/logo.png';
+import Logo from '../images/logo3.png';
 import Styles from '../styles/Nav.module.css'
 import {
     Collapse,
@@ -21,7 +21,7 @@ export function NavBar() {
 
     
     return (
-        <Navbar className="navbar-dark p-1 fixed-top text-center" expand="md">
+        <Navbar className="navbar-dark p-1 text-center" expand="md">
             <div className="container-fluid p-2">
                 <NavbarBrand className="p-1 m-0 d-md-none" style={{ border: '1px solid #b9fe29' }} href="/"><img src={Logo} alt="Logo" width="100px" /></NavbarBrand>
                 <NavbarToggler className="border-0" onClick={toggle} />
@@ -48,7 +48,7 @@ export function NavBar() {
                         <XyzTransition appearVisible xyz="fade-100% duration-25 small-25%">
                             <div>
                                 <NavItem className="nav-item mx-4">
-                                    <Link to={"/"} className="m-0 p-1 d-none d-md-block text-white" style={{ border: '1px solid #b9fe29' }} href="/">
+                                    <Link to={"/"} className="m-0 p-1 d-none d-md-block text-white" href="/">
                                         <img src={Logo} alt="Logo" width="100px" />
                                     </Link>
                                 </NavItem>

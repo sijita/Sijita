@@ -34,7 +34,7 @@ export default function Section3() {
                             <Cards tittle="Portafolio personal" screen={ Screen } href={fullScreen1} />
                         </div>
                     </XyzTransition>
-                    <XyzTransition appearVisible xyz="fade-100% small duration-15 delay-2">
+                    <XyzTransition appearVisible xyz="fade-100% small duration-15 delay-1.5">
                         <div>
                             <Cards tittle="eCommerce" screen={ Screen2 } href="/" href2="/" />
                         </div>
@@ -46,7 +46,7 @@ export default function Section3() {
                             <Cards tittle="eCommerce" screen={ Screen3 } href={ fullScreen2 } />
                         </div>
                     </XyzTransition>
-                    <XyzTransition appearVisible xyz="fade-100% fade small duration-15 delay-2">
+                    <XyzTransition appearVisible xyz="fade-100% fade small duration-15 delay-1.5">
                         <div>
                             <Cards tittle="Página escolar" screen={ Screen4 } href={fullScreen4 } />
                         </div>
