@@ -1,6 +1,6 @@
 import "@animxyz/core";
 import { XyzTransition } from '@animxyz/react';
-import { DiHtml5, DiCss3, DiJavascript, DiReact, DiBootstrap } from "react-icons/di"
+import { DiHtml5, DiCss3, DiJavascript, DiReact, DiBootstrap, DiPhotoshop } from "react-icons/di"
 import fotoPersonal from '../images/fotoPersonal.jpg'
 
 const listStyle = {
@@ -19,8 +19,8 @@ export default function Section1() {
                     <h2 className="d-inline-block align-middle" style={{ color: '#f6fafd', overflow: 'hidden' }}>Sobre mi</h2>
                 </XyzTransition>
                 <div className="row row-cols-1 row-cols-lg-2 justify-content-center">
-                    <div className="col fs-5 mt-4 mb-4" style={{ color: '#96a4b3', overflow: 'hidden', textAlign: 'justify'}}>
-                        <XyzTransition appearVisible xyz="fade-100% down-25% duration-20 delay-5">
+                    <div className="col fs-5 mt-4" style={{ color: '#96a4b3', overflow: 'hidden', textAlign: 'justify'}}>
+                        <XyzTransition appearVisible xyz="fade-100% down-25% duration-15">
                             <div>
                                 Mi nombre es <span style={color}>Simón Jiménez Tamayo,</span> tengo 20 años y soy estudiante de 6to semestre de
                                 Ingeniería de Software de la Universidad Surcolombiana,
@@ -64,15 +64,20 @@ export default function Section1() {
                                             BootStrap&nbsp; <DiBootstrap className="fs-4" style={{ color: '#96a4b3' }}></DiBootstrap>
                                         </li>
                                     </XyzTransition>
-                                    <XyzTransition appearVisible xyz="fade-100% down-100% duration-15">
+                                    <XyzTransition appearVisible xyz="fade-100% left-100% duration-15">
                                         <li className="col p-3 text-muted d-flex align-items-center justify-content-center" style={listStyle}>
-                                            React&nbsp; <DiReact className="fs-3" style={{ color: '#96a4b3' }}></DiReact>
+                                            React&nbsp; <DiReact className="fs-4" style={{ color: '#96a4b3' }}></DiReact>
+                                        </li>
+                                    </XyzTransition>
+                                    <XyzTransition appearVisible xyz="fade-100% right-100% duration-15">
+                                        <li className="col p-3 text-muted d-flex align-items-center justify-content-center" style={listStyle}>
+                                            Photoshop&nbsp; <DiPhotoshop className="fs-4" style={{ color: '#96a4b3' }}></DiPhotoshop>
                                         </li>
                                     </XyzTransition>
                                 </ul>
                             </div>
                         </div>
-                    <XyzTransition appearVisible xyz="fade-100% down-25% duration-25">
+                    <XyzTransition appearVisible xyz="fade-100% down-25% duration-15">
                         <div className="col mt-4 text-center">
                             <img src={fotoPersonal} alt="Foto personal" width="420" className="rounded p-2 img-fluid" style={{ border: '1px solid #BAFF29' }} />
                         </div>

@@ -1,0 +1,5 @@
+.focusable:focus {
+    outline: none;
+    box-shadow: none !important;
+    border: 2px solid transparent;
+}
