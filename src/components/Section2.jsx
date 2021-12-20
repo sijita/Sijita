@@ -1,6 +1,5 @@
 import "@animxyz/core";
 import { XyzTransition } from '@animxyz/react';
-import { IoCaretDownCircleSharp } from "react-icons/io5";
 
 const color = {
     color: "#BAFF29",
@@ -27,7 +26,7 @@ function ListsItems({ number, tittle }) {
 export default function Section2() {
     return (
         <section id="Experiencia">
-            <div className="container p-5 mt-5 mb-5">
+            <div className="container p-5 mt-5">
                 <XyzTransition appearVisible xyz="fade-100% left-100% duration-10">
                     <h2 className="d-inline-block align-middle" style={{ color: '#f6fafd', overflow: "hidden"}}>Experiencia</h2>
                 </XyzTransition>
@@ -46,18 +45,13 @@ export default function Section2() {
                                 <li className="mt-4 text-sm-center">
                                     <ul className="fs-4" style={color}>Freelancer (<span className="text-white">Desarrollador web</span>)</ul>
                                     <ul className="text-muted" style={{ fontFamily: 'monospace' }}>2019 - PRESENTE</ul>
-                                    <Lists number={"1."} tittle={"Portafolio personal."} />
+                                    <Lists number={"1."} tittle={"Página hotelera."} />
                                     <Lists number={"2."} tittle={"Ecommerce"} />
                                     <Lists number={"3."} tittle={"Ecommerce"} />
                                     <Lists number={"4."} tittle={"Página escolar"} />
                                 </li>
                             </XyzTransition>
                         </ul>
-                        <div className="text-center fs-4 mt-5">
-                            <a href="#Proyectos" style={{ color: '#fff' }}>
-                                <IoCaretDownCircleSharp />
-                            </a>
-                        </div>
                     </div>
             </div>
         </section>

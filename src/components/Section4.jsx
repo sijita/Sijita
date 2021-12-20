@@ -9,12 +9,11 @@ const cardStyle = {
 
 export default function Section4() {
     return (
-        <section id="Servicios">
-            <div className="container p-5 mt-5 mb-5">
+            <div className="container p-5">
                 <XyzTransition appearVisible xyz="fade-100% left-100% duration-15">
                     <h2 className="d-inline-block align-middle" style={{ color: '#f6fafd', overflow: 'hidden' }}>Servicios</h2>
                 </XyzTransition>
-                <div className="row row-cols-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 justify-content-evenly mx-auto mt-4 gap-3" style={{ overflow: 'hidden' }}>
+                <div className="row row-cols-1 row-cols-md-3 row-cols-xl-5 justify-content-evenly mx-auto mt-5 gap-5" style={{ overflow: 'hidden' }}>
                     <XyzTransition appearVisible xyz="fade-100% down-50% duration-20">
                         <div className="col text-center rounded p-4" style={cardStyle}>
                             <h1 className="fs-5 my-2" style={cardStyle}>Diseños increibles</h1>
@@ -34,7 +33,7 @@ export default function Section4() {
                         </div>
                     </XyzTransition>
                     <XyzTransition appearVisible xyz="fade-100% down-50% duration-20">
-                        <div className="col text-center rounded p-4 mt-lg-0 mt-md-5" style={cardStyle}>
+                        <div className="col text-center rounded p-4" style={cardStyle}>
                             <h1 className="fs-5 my-2" style={cardStyle}>Rendimiento</h1>
                             <IoRocket className="fs-2 my-3" style={cardStyle} />
                             <p className="my-2" style={cardStyle}>
@@ -43,7 +42,7 @@ export default function Section4() {
                         </div>
                     </XyzTransition>
                     <XyzTransition appearVisible xyz="fade-100% down-50% duration-20">
-                        <div className="col text-center rounded p-4 mt-lg-5 mt-md-5 mt-xl-0" style={cardStyle}>
+                        <div className="col text-center rounded p-4" style={cardStyle}>
                             <h1 className="fs-5 my-2" style={cardStyle}>SEO</h1>
                             <IoTrophySharp className="fs-2 my-3" style={cardStyle}/>
                             <p className="my-2" style={cardStyle}>
@@ -53,7 +52,6 @@ export default function Section4() {
                     </XyzTransition>
                 </div>
             </div>
-        </section>
     )
 }
      

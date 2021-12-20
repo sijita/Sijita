@@ -38,4 +38,32 @@
     .title2 {
         font-size: 3vw;
     }
+
+    .logo {
+        width: 200px;
+    }
  }
+
+ @media (min-width: 576px) { 
+     .logo {
+         width: 300px;
+     }
+  }
+
+  @media (min-width: 768px) { 
+      .logo {
+          width: 350px;
+      }
+   }
+
+   @media (min-width: 992px) { 
+       .logo {
+           width: 400px;
+       }
+    }
+
+    @media (min-width: 1200px) { 
+        .logo {
+            width: 500px;
+        }
+     }

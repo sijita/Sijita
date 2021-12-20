@@ -1,12 +1,18 @@
-import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Home from './pages/Home';
+import Experience from './pages/Experience';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route path="/" exact component={Home} />
-      </Switch>
+      <Routes>
+        <Route index exact element={<Home />} />
+        <Route exact path="/experience" element={<Experience />} />
+        <Route exact path="/projects" element={<Projects />} />
+        <Route exact path="/contact" element={<Contact />} />
+      </Routes>
     </Router>
   );
 }

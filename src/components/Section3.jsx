@@ -24,7 +24,7 @@ function Cards({ tittle, screen, href }) {
 export default function Section3() {
     return (
         <section id="Proyectos">
-            <div className="container p-5 mt-5 mb-5">
+            <div className="container p-5 mt-5">
                 <XyzTransition appearVisible xyz="fade-100% left-100% duration-15">
                     <h2 className="d-inline-block align-middle" style={{color: '#f6fafd', overflow: "hidden"}}>Proyectos</h2>
                 </XyzTransition>
