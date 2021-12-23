@@ -10,7 +10,7 @@ export default function Experience() {
     return (
         <React.Fragment>
             <Header />
-            <NavBar titulo1="Sobre mi" titulo2="Experiencia" titulo3="Trabajos" titulo4="Contacto" />
+            <NavBar titulo1="Sobre mi" titulo2="Experiencia" titulo3="Proyectos" titulo4="Contacto" />
             <Section2 />
             <Section4 />
             <Aside />
