@@ -4,7 +4,6 @@ import Screen from '../images/screen.jpg';
 import Screen2 from '../images/screen2.jpg';
 import Screen3 from '../images/screen3.jpg';
 import Screen4 from '../images/screen4.jpg';
-import fullScreen1 from '../images/fullScreen1.png';
 import fullScreen2 from '../images/fullScreen2.png';
 import fullScreen4 from '../images/fullScreen4.png';
 
@@ -31,7 +30,7 @@ export default function Section3() {
                 <div className="row row-cols-1 row-cols-lg-2 p-0" style={{overflow: 'hidden'}}>
                     <XyzTransition appearVisible xyz="fade-100% small duration-15">
                         <div>
-                            <Cards tittle="Hostería Ambeyma" screen={Screen} href={fullScreen1} />
+                            <Cards tittle="Hostería Ambeyma" screen={Screen} href="https://www.hotelambeyma.com/"/>
                         </div>
                     </XyzTransition>
                     <XyzTransition appearVisible xyz="fade-100% small duration-15 delay-1.5">
