@@ -19,10 +19,10 @@ const Home = () => {
                     titulo2={[<XyzTransition appear xyz="fade-100% left-50% duration-15 delay-10"><div className={Styles.title4}> Front </div></XyzTransition>]}
                     barra={[<XyzTransition appear xyz="fade-100% small-25% duration-15 delay-10"><div className={Styles.title4}>&nbsp;-&nbsp;</div></XyzTransition>]} 
                     titulo3={[<XyzTransition appear xyz="fade-100% right-50% duration-15 delay-10"><div className={Styles.title4}> End </div></XyzTransition>]} />
-            <NavBar titulo1="Sobre mi" titulo2="Experiencia" titulo3="Proyectos" titulo4="Contacto" />
+            <NavBar titulo1="Sobre mi" titulo2="Experiencia" titulo3="Proyectos" titulo4="Contacto" xyz="fade-100% duration-25 small-25%" />
             <Section1 descripcion={["Mi nombre es ", <span style={{color: "#BAFF29"}}>Simón Jiménez Tamayo</span>, ", tengo 20 años y soy estudiante de 6to semestre de Ingeniería de Software de la Universidad Surcolombiana, ubicada en Neiva-Huila ", <span style={{color: "#BAFF29"}}>(</span>, "Colombia", <span style={{color: "#BAFF29"}}>)</span>, ". ", <br />,<br />, "Tengo claro mi objetivo: dedicarme y enfocarme en ser un gran desarrollador web. Desde niño siempre he sido muy creativo, descubrí que mi talento es dibujar y que me apasiona la tecnología, empecé trasladando mis dibujos en papel a dibujos digitales, aprendiendo así a usar Photoshop y otras herramientas, desde el 2013 hago flyers, logos, videos y todo tipo de diseños publicitarios, sin embargo, nunca quise ser diseñador gráfico, quería algo que fuera más allá y afortunadamente ahora me desempeño en esta rama de mi carrera." ]} />
             <Section4 />
-            <Aside />
+            <Aside xyza="fade-100% down-100% duration-20 delay-10" xyzb="fade-100% down-100% duration-20 delay-8" xyzc="fade-100% down-100% duration-20 delay-6" xyzd="fade-100% down-100% duration-20 delay-4" xyze="fade-100% down-100% duration-10 delay-2" />
             <Footer />
         </React.Fragment>
 

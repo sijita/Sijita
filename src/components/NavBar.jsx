@@ -11,7 +11,21 @@ import {
     NavItem,
   } from "reactstrap";
 
-export function NavBar({titulo1, titulo2, titulo3, titulo4}) {
+function Navlinks({tittle, to, xyz}) {
+    return(
+        <XyzTransition appearVisible xyz={xyz}>    
+            <div>
+                <NavItem className="nav-item mx-4">
+                    <NavLink exact to={to} className={({isActive}) => isActive ? Styles.active : Styles.navLink}>
+                        {tittle}
+                    </NavLink>
+                </NavItem>
+            </div>
+        </XyzTransition>
+    )
+}
+
+export function NavBar({titulo1, titulo2, titulo3, titulo4, xyz}) {
     
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
@@ -23,42 +37,10 @@ export function NavBar({titulo1, titulo2, titulo3, titulo4}) {
                 <NavbarToggler className="border-0" onClick={toggle} />
                 <Collapse className="justify-content-center" isOpen={isOpen} navbar>
                     <Nav className={`align-items-center justify-content-center mt-0 mt-1 mt-sm-1 mb-sm-1 gap-5 ${Styles.nav}`} navbar>
-                        <XyzTransition appearVisible xyz="fade-100% duration-25 small-25%">    
-                            <div>
-                                <NavItem className="nav-item mx-4">
-                                        <NavLink exact to="/" className={({isActive}) => isActive ? Styles.active : Styles.navLink}>
-                                            {titulo1}
-                                        </NavLink>
-                                </NavItem>
-                            </div>
-                        </XyzTransition>
-                        <XyzTransition appearVisible xyz="fade-100% duration-25 small-25%">
-                            <div>
-                                <NavItem className="nav-item mx-4">
-                                    <NavLink exact to="/experience" className={({isActive}) => isActive ? Styles.active : Styles.navLink}>
-                                        {titulo2}
-                                    </NavLink>
-                                </NavItem>
-                            </div>
-                        </XyzTransition>
-                        <XyzTransition appearVisible xyz="fade-100% duration-25 small-25%">
-                            <div>
-                                <NavItem className="nav-item mx-4">
-                                    <NavLink exact to="/projects" className={({isActive}) => isActive ? Styles.active : Styles.navLink}>
-                                        {titulo3}
-                                    </NavLink>
-                                </NavItem>
-                            </div>
-                        </XyzTransition>
-                        <XyzTransition appearVisible xyz="fade-100% duration-25 small-25%">
-                            <div>
-                                <NavItem className="nav-item mx-4">
-                                    <NavLink to="/contact" className={({isActive}) => isActive ? Styles.active : Styles.navLink}>
-                                        {titulo4}
-                                    </NavLink>
-                                </NavItem>
-                            </div>
-                        </XyzTransition>
+                        <Navlinks tittle={titulo1} xyz={xyz} to="/" />
+                        <Navlinks tittle={titulo2} xyz={xyz} to="/experience" />
+                        <Navlinks tittle={titulo3} xyz={xyz} to="/projects" />
+                        <Navlinks tittle={titulo4} xyz={xyz} to="/contact" />
                     </Nav>
                 </Collapse>
             </div>
