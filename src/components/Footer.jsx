@@ -36,6 +36,7 @@ export function Footer() {
                       </li>
                     </XyzTransition>
                 </ul>
+                <p className="text-center text-muted font-monospace m-0 p-5">Simón Jiménez Tamayo 💚 2022</p>
             </div>
     );
 };

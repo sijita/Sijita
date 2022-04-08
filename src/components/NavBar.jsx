@@ -33,7 +33,7 @@ export function NavBar({titulo1, titulo2, titulo3, titulo4, xyz}) {
     
     return (
         <Navbar className="navbar-dark p-1 text-center my-sm-5" expand="md">
-            <div className="container-fluid p-2 justify-content-center">
+            <div className="container-fluid p-5 justify-content-center">
                 <NavbarToggler className="border-0" onClick={toggle} />
                 <Collapse className="justify-content-center" isOpen={isOpen} navbar>
                     <Nav className={`align-items-center justify-content-center mt-0 mt-1 mt-sm-1 mb-sm-1 gap-5 ${Styles.nav}`} navbar>

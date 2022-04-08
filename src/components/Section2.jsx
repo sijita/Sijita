@@ -38,8 +38,8 @@ export default function Section2() {
                         <ul className="row row-cols-1 row-cols-lg-2 p-0" style={{listStyle: 'none'}}>
                             <XyzTransition appearVisible xyz="fade-100% left-50% duration-15">
                                 <li className="mt-4 text-sm-center">
-                                    <ul className="fs-4" style={color}>Freelancer (<span className="text-white">Diseñador gráfico</span>)</ul>
-                                    <ul className="text-muted" style={{ fontFamily: 'monospace' }}>2013 - PRESENTE</ul>
+                                    <ul className="fs-4 fw-bold" style={color}>Diseñador gráfico (<span className="text-white fw-normal">Freelancer</span>)</ul>
+                                    <ul className="text-light mt-4">2013 - PRESENTE</ul>
                                     <Lists number={"1."} tittle={"Creación de posters/flyers para diferentes fiestas y eventos."} />
                                     <Lists number={"2."} tittle={"Creación de logos para personas y pequeñas empresas."} />
                                     <Lists number={"3."} tittle={"Creación y edición de videos para canales de YouTube."} />
@@ -47,8 +47,8 @@ export default function Section2() {
                             </XyzTransition>
                             <XyzTransition appearVisible xyz="fade-100% right-50% duration-15">
                                 <li className="mt-4 text-sm-center">
-                                    <ul className="fs-4" style={color}>Freelancer (<span className="text-white">Desarrollador web</span>)</ul>
-                                    <ul className="text-muted" style={{ fontFamily: 'monospace' }}>2019 - PRESENTE</ul>
+                                    <ul className="fs-4 fw-bold" style={color}>Desarrollador web (<span className="text-white fw-normal">Freelancer</span>)</ul>
+                                    <ul className="text-light mt-4">2019 - PRESENTE</ul>
                                     <Lists number={"1."} tittle={"Página hotelera."} />
                                     <Lists number={"2."} tittle={"Ecommerce"} />
                                     <Lists number={"3."} tittle={"Ecommerce"} />
