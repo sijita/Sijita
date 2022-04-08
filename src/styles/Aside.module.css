@@ -3,3 +3,13 @@
     box-shadow: none !important;
     border: 2px solid transparent;
 }
+
+.hovStroke:hover {
+    font-size: 26px !important;
+    stroke: url(#green-gradient)
+}
+
+.hovFill:hover {
+    font-size: 26px !important;
+    fill: url(#green-gradient)
+}

@@ -2,7 +2,11 @@ import "@animxyz/core";
 import { XyzTransition } from '@animxyz/react';
 
 const color = {
-    color: "#BAFF29",
+    backgroundColor: "#baff29",
+    backgroundImage: "linear-gradient(45deg, #baff29 0%, #3fea2f 100%)",
+    WebkitBackgroundClip: "text",
+    backgroundClip: "text",
+    color: "transparent",
 }
 
 function Lists({ tittle, year, number }) {

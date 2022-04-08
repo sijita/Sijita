@@ -6,16 +6,26 @@
 .active {
     font-size: 24px;
     text-decoration: none;
-    color: #BAFF29;
-    font-weight: 600;
+    background-color: #baff29;
+    background-image: linear-gradient(45deg, #baff29 0%, #3fea2f 100%);
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
 }
 
 .navLink:hover {
-    color: #BAFF29;
+    background-color: #baff29;
+    background-image: linear-gradient(45deg, #baff29 0%, #3fea2f 100%);
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
 }
 
 .active:hover {
-    color: #BAFF29;
+    background-color: #baff29;
+    background-image: linear-gradient(45deg, #baff29 0%, #3fea2f 100%);
+    background-clip: text;
+    color: transparent;
 }
 
 @media (max-width: 575.98px) { 
