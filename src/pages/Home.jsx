@@ -9,7 +9,8 @@ import Styles from "../styles/Header.module.css";
 import "@animxyz/core";
 import { XyzTransition } from "@animxyz/react";
 import Logo from "../images/logo3.png";
-import { useState } from "react";
+import UserContext from "../context/AuthContext"
+import { useContext } from "react"
 
 function Spanish() {
   return (
@@ -121,15 +122,7 @@ function English() {
 }
 
 const Home = () => {
-  const [translated, setTranslated] = useState(false);
-
-  const handleTranslate = () => {
-    setTranslated(true);
-  };
-
-  const handleOriginal = () => {
-    setTranslated(false);
-  };
+  const { translated, handleTranslate, handleOriginal } = useContext(UserContext)
 
   return (
     <React.Fragment>
@@ -214,13 +207,13 @@ const Home = () => {
         }
       />
       <Aside
-        display={translated ? "my-4" : "my-4 d-none"}
-        display2={translated ? "my-4 d-none" : "my-4"}
         xyza="fade-100% down-100% duration-20 delay-10"
         xyzb="fade-100% down-100% duration-20 delay-8"
         xyzc="fade-100% down-100% duration-20 delay-6"
         xyzd="fade-100% down-100% duration-20 delay-4"
         xyze="fade-100% down-100% duration-10 delay-2"
+        display={translated ? "my-4" : "my-4 d-none"}
+        display2={translated ? "my-4 d-none" : "my-4"}
         handleTranslate={handleTranslate}
         handleOriginal={handleOriginal}
       />

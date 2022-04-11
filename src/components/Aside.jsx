@@ -26,17 +26,14 @@ export function Aside({ xyza, xyzb, xyzc, xyzd, xyze, handleTranslate, handleOri
 
   function myFunction() {
     const boton = document.getElementById("upBtn");
-    const hr = document.getElementById("upHr");
 
     if (
       document.body.scrollTop > 750 ||
       document.documentElement.scrollTop > 750
     ) {
       boton.classList.remove("d-none");
-      hr.classList.remove("d-none");
     } else {
       boton.classList.add("d-none");
-      hr.classList.add("d-none");
     }
   }
 
@@ -117,14 +114,16 @@ export function Aside({ xyza, xyzb, xyzc, xyzd, xyze, handleTranslate, handleOri
         className="text-center d-flex flex-column p-0 fixed-bottom mb-0 d-none d-sm-block"
         style={{ listStyle: "none", width: 60, left: "auto" }}
       >
-        <li className={display2}>
-          <button 
-            className={"btn btn-link m-0 p-0 up" + Styles.focusable}
-            onClick={handleTranslate}
-          >
-            <BsTranslate className={`fs-4 ${Styles.transHov}`} style={{ color: "#96a4b3" }} />
-          </button>
-        </li>
+        <XyzTransition appear xyz={xyze}>
+          <li className={display2}>
+            <button 
+              className={"btn btn-link m-0 p-0 up" + Styles.focusable}
+              onClick={handleTranslate}
+            >
+              <BsTranslate className={`fs-4 ${Styles.transHov}`} style={{ color: "#96a4b3" }} />
+            </button>
+          </li>
+        </XyzTransition>
         <li className={display}>
         <button 
             className={"btn btn-link m-0 p-0 up" + Styles.focusable}
@@ -149,10 +148,8 @@ export function Aside({ xyza, xyzb, xyzc, xyzd, xyze, handleTranslate, handleOri
           </li>
         </XyzTransition>
         <XyzTransition
-          id="upHr"
           appearVisible
-          xyz="fade-100% down-100% duration-20 delay-2"
-          className="d-none"
+          xyz={xyze}
         >
           <li>
             <hr

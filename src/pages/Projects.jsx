@@ -7,18 +7,11 @@ import Section3 from "../components/Section3";
 import Section4 from "../components/Section4";
 import Styles from "../styles/Header.module.css";
 import Logo from "../images/logo3.png";
-import { useState } from "react";
+import UserContext from "../context/AuthContext"
+import { useContext } from "react"
 
 export default function Projects() {
-  const [translated, setTranslated] = useState(false);
-
-  const handleTranslate = () => {
-    setTranslated(true);
-  };
-
-  const handleOriginal = () => {
-    setTranslated(false);
-  };
+  const { translated, handleTranslate, handleOriginal } = useContext(UserContext)
   return (
     <React.Fragment>
       <Header
