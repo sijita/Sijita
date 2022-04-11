@@ -14,7 +14,7 @@ const listStyle = {
   fontFamily: "monospace",
 };
 
-export default function Section1({ descripcion }) {
+export default function Section1({ titulo, descripcion }) {
   return (
     <div className="container p-5">
       <svg width="0" height="0">
@@ -28,7 +28,7 @@ export default function Section1({ descripcion }) {
           className="d-inline-block align-middle"
           style={{ color: "#f6fafd", overflow: "hidden" }}
         >
-          Sobre mi
+          {titulo}
         </h2>
       </XyzTransition>
       <div className="row row-cols-1 row-cols-lg-2 justify-content-center">

@@ -31,7 +31,7 @@ function Cards({ tittle, screen, href }) {
   );
 }
 
-export default function Section3() {
+export default function Section3({tittle, subtittle1, subtittle2}) {
   return (
     <section id="Proyectos">
       <div className="container p-5 mt-5">
@@ -40,7 +40,7 @@ export default function Section3() {
             className="d-inline-block align-middle"
             style={{ color: "#f6fafd", overflow: "hidden" }}
           >
-            Proyectos
+            {tittle}
           </h2>
         </XyzTransition>
         <div
@@ -50,7 +50,7 @@ export default function Section3() {
           <XyzTransition appearVisible xyz="fade-100% small duration-15">
             <div>
               <Cards
-                tittle="Hostería Ambeyma"
+                tittle={subtittle1}
                 screen={Screen}
                 href="https://www.hotelambeyma.com/"
               />
@@ -61,7 +61,7 @@ export default function Section3() {
             xyz="fade-100% small duration-15 delay-1.5"
           >
             <div>
-              <Cards tittle="eCommerce" screen={Screen2} href="/" href2="/" />
+              <Cards tittle="Ecommerce" screen={Screen2} href="/" href2="/" />
             </div>
           </XyzTransition>
         </div>
@@ -71,7 +71,7 @@ export default function Section3() {
         >
           <XyzTransition appearVisible xyz="fade-100% fade small duration-15">
             <div>
-              <Cards tittle="eCommerce" screen={Screen3} href={fullScreen2} />
+              <Cards tittle="Ecommerce" screen={Screen3} href={fullScreen2} />
             </div>
           </XyzTransition>
           <XyzTransition
@@ -80,7 +80,7 @@ export default function Section3() {
           >
             <div>
               <Cards
-                tittle="Página escolar"
+                tittle={subtittle2}
                 screen={Screen4}
                 href={fullScreen4}
               />

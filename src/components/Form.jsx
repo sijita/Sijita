@@ -91,7 +91,7 @@ function TextAreaInput({ type = "text", label }) {
   );
 }
 
-export default function Form() {
+export default function Form({tittle, input1, input2, input3, btnText}) {
   return (
     <div
       className="container p-5"
@@ -129,7 +129,7 @@ export default function Form() {
           <input type="checkbox" name="botcheck" className="d-none" />
           <XyzTransition appearVisible xyz="fade-100% up-100% duration-30">
             <div>
-              <h2 className="mb-5 text-white">¡Envíame un correo!</h2>
+              <h2 className="mb-5 text-white">{tittle}</h2>
             </div>
           </XyzTransition>
           <XyzTransition appearVisible xyz="fade-100% down-50% duration-15">
@@ -143,7 +143,7 @@ export default function Form() {
                       width: "15px",
                     }}
                   />,
-                  " Nombre",
+                  input1
                 ]}
               />
             </div>
@@ -162,7 +162,7 @@ export default function Form() {
                       width: "15px",
                     }}
                   />,
-                  " Correo",
+                  input2
                 ]}
               />
             </div>
@@ -181,7 +181,7 @@ export default function Form() {
                       width: "15px",
                     }}
                   />,
-                  " Mensaje",
+                  input3
                 ]}
               />
             </div>
@@ -201,7 +201,7 @@ export default function Form() {
                     "linear-gradient(45deg, #baff29 0%, #3fea2f 100%)",
                 }}
               >
-                Enviar
+                {btnText}
               </button>
             </div>
           </XyzTransition>

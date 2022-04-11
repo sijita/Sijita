@@ -3,6 +3,7 @@ import { XyzTransition } from "@animxyz/react";
 import { CgArrowUpR } from "react-icons/cg";
 import { FiFacebook, FiGithub } from "react-icons/fi";
 import { IoLogoWhatsapp, IoLogoInstagram } from "react-icons/io5";
+import { BsTranslate } from "react-icons/bs";
 import { animateScroll as scroll } from "react-scroll";
 import Styles from "../styles/Aside.module.css";
 
@@ -18,7 +19,7 @@ function Red({ xyz, href, icon }) {
   );
 }
 
-export function Aside({ xyza, xyzb, xyzc, xyzd, xyze }) {
+export function Aside({ xyza, xyzb, xyzc, xyzd, xyze, handleTranslate, handleOriginal, display, display2 }) {
   window.onscroll = function () {
     myFunction();
   };
@@ -72,20 +73,31 @@ export function Aside({ xyza, xyzb, xyzc, xyzd, xyze }) {
           xyz={xyzb}
           href="https://api.whatsapp.com/send?phone=573193139280&text=Hola!%20Vi%20tu%20portafolio%20y%20estoy%20interesado%20en%20una%20p%C3%A1gina."
           icon={[
-            <IoLogoWhatsapp className={`fs-4 ${Styles.hovFill}`} style={{ color: "#96a4b3" }} />,
+            <IoLogoWhatsapp
+              className={`fs-4 ${Styles.hovFill}`}
+              style={{ color: "#96a4b3" }}
+            />,
           ]}
         />
         <Red
           xyz={xyzc}
           href="https://www.instagram.com/simonjimenezt/"
           icon={[
-            <IoLogoInstagram className={`fs-4 ${Styles.hovFill}`} style={{ color: "#96a4b3" }} />,
+            <IoLogoInstagram
+              className={`fs-4 ${Styles.hovFill}`}
+              style={{ color: "#96a4b3" }}
+            />,
           ]}
         />
         <Red
           xyz={xyzd}
           href="https://github.com/sijita"
-          icon={[<FiGithub className={`fs-4 ${Styles.hovStroke}`} style={{ color: "#96a4b3" }} />]}
+          icon={[
+            <FiGithub
+              className={`fs-4 ${Styles.hovStroke}`}
+              style={{ color: "#96a4b3" }}
+            />,
+          ]}
         />
         <XyzTransition appear xyz={xyze}>
           <li>
@@ -93,7 +105,10 @@ export function Aside({ xyza, xyzb, xyzc, xyzd, xyze }) {
               width="2"
               size="150"
               className="mx-auto mb-0"
-              style={{ backgroundImage: "linear-gradient(180deg, #baff29 0%, #3fea2f 100%)" }}
+              style={{
+                backgroundImage:
+                  "linear-gradient(180deg, #baff29 0%, #3fea2f 100%)",
+              }}
             />
           </li>
         </XyzTransition>
@@ -102,6 +117,22 @@ export function Aside({ xyza, xyzb, xyzc, xyzd, xyze }) {
         className="text-center d-flex flex-column p-0 fixed-bottom mb-0 d-none d-sm-block"
         style={{ listStyle: "none", width: 60, left: "auto" }}
       >
+        <li className={display2}>
+          <button 
+            className={"btn btn-link m-0 p-0 up" + Styles.focusable}
+            onClick={handleTranslate}
+          >
+            <BsTranslate className={`fs-4 ${Styles.transHov}`} style={{ color: "#96a4b3" }} />
+          </button>
+        </li>
+        <li className={display}>
+        <button 
+            className={"btn btn-link m-0 p-0 up" + Styles.focusable}
+            onClick={handleOriginal}
+          >
+            <BsTranslate className={`fs-4 ${Styles.transHov}`} style={{ color: "#96a4b3" }} />
+          </button>
+        </li>
         <XyzTransition
           id="upBtn"
           appearVisible
@@ -113,10 +144,7 @@ export function Aside({ xyza, xyzb, xyzc, xyzd, xyze }) {
               className={"btn btn-link m-0 p-0 up " + Styles.focusable}
               onClick={onClickUp}
             >
-              <CgArrowUpR
-                className="fs-4"
-                style={{ color: "#96a4b3" }}
-              ></CgArrowUpR>
+              <CgArrowUpR className="fs-4" style={{ color: "#96a4b3" }} />
             </button>
           </li>
         </XyzTransition>
@@ -131,7 +159,10 @@ export function Aside({ xyza, xyzb, xyzc, xyzd, xyze }) {
               width="2"
               size="150"
               className="mx-auto mb-0"
-              style={{ backgroundImage: "linear-gradient(180deg, #baff29 0%, #3fea2f 100%)" }}
+              style={{
+                backgroundImage:
+                  "linear-gradient(180deg, #baff29 0%, #3fea2f 100%)",
+              }}
             />
           </li>
         </XyzTransition>

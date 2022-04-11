@@ -1,15 +1,17 @@
 .focusable:focus {
     outline: none;
     box-shadow: none !important;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
+}
+
+.transHov:hover {
+    fill: url(#green-gradient)
 }
 
 .hovStroke:hover {
-    font-size: 26px !important;
     stroke: url(#green-gradient)
 }
 
 .hovFill:hover {
-    font-size: 26px !important;
     fill: url(#green-gradient)
 }
