@@ -76,7 +76,7 @@ export function NavBar({
                 justifyContent: "center",
                 alignItems: "center",
                 height: "100%",
-                fontSize: 18,
+                fontSize: 16,
                 color: "#000",
               }}
             >
@@ -90,7 +90,7 @@ export function NavBar({
                 justifyContent: "center",
                 alignItems: "center",
                 height: "100%",
-                fontSize: 18,
+                fontSize: 16,
                 color: "#fff",
               }}
             >
