@@ -11,7 +11,7 @@ import UserContext from "../context/AuthContext"
 import { useContext } from "react"
 
 export default function Experience() {
-  const { translated, handleTranslate, handleOriginal } = useContext(UserContext)
+  const { translated, handleTranslate } = useContext(UserContext)
 
   return (
     <React.Fragment>
@@ -40,6 +40,8 @@ export default function Experience() {
         titulo3={[<div className={Styles.title4}> End </div>]}
       />
       <NavBar
+        handleTranslate={handleTranslate}
+        translated={translated}
         titulo1={translated ? "About me" : "Sobre mi"}
         titulo2={translated ? "Experience" : "Experiencia"}
         titulo3={translated ? "Projects" : "Proyectos"}
@@ -84,12 +86,7 @@ export default function Experience() {
             : "Páginas optimizadas para el buen posicionamiento en buscadores"
         }
       />
-      <Aside
-        display={translated ? "my-4" : "my-4 d-none"}
-        display2={translated ? "my-4 d-none" : "my-4"}
-        handleTranslate={handleTranslate}
-        handleOriginal={handleOriginal}
-      />
+      <Aside handleTranslate={handleTranslate} />
       <Footer />
     </React.Fragment>
   );

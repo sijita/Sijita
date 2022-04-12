@@ -7,17 +7,12 @@ const AuthProvider = ({ children }) => {
   const [translated, setTranslated] = useState(false);
 
   const handleTranslate = () => {
-    setTranslated(true);
-  };
-
-  const handleOriginal = () => {
-    setTranslated(false);
+    setTranslated(!translated);
   };
 
   const data = {
       translated,
-      handleTranslate,
-      handleOriginal
+      handleTranslate
   };
 
   return <UserContext.Provider value={data}>{children}</UserContext.Provider>;

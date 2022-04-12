@@ -122,7 +122,7 @@ function English() {
 }
 
 const Home = () => {
-  const { translated, handleTranslate, handleOriginal } = useContext(UserContext)
+  const { translated, handleTranslate } = useContext(UserContext)
 
   return (
     <React.Fragment>
@@ -169,6 +169,8 @@ const Home = () => {
         ]}
       />
       <NavBar
+        handleTranslate={handleTranslate}
+        translated={translated}
         titulo1={translated ? "About me" : "Sobre mi"}
         titulo2={translated ? "Experience" : "Experiencia"}
         titulo3={translated ? "Projects" : "Proyectos"}
@@ -212,10 +214,7 @@ const Home = () => {
         xyzc="fade-100% down-100% duration-20 delay-6"
         xyzd="fade-100% down-100% duration-20 delay-4"
         xyze="fade-100% down-100% duration-10 delay-2"
-        display={translated ? "my-4" : "my-4 d-none"}
-        display2={translated ? "my-4 d-none" : "my-4"}
         handleTranslate={handleTranslate}
-        handleOriginal={handleOriginal}
       />
       <Footer />
     </React.Fragment>

@@ -19,7 +19,7 @@ function Red({ xyz, href, icon }) {
   );
 }
 
-export function Aside({ xyza, xyzb, xyzc, xyzd, xyze, handleTranslate, handleOriginal, display, display2 }) {
+export function Aside({ xyza, xyzb, xyzc, xyzd, xyze, handleTranslate}) {
   window.onscroll = function () {
     myFunction();
   };
@@ -115,7 +115,7 @@ export function Aside({ xyza, xyzb, xyzc, xyzd, xyze, handleTranslate, handleOri
         style={{ listStyle: "none", width: 60, left: "auto" }}
       >
         <XyzTransition appear xyz={xyze}>
-          <li className={display2}>
+          <li className="my-4">
             <button 
               className={"btn btn-link m-0 p-0 up" + Styles.focusable}
               onClick={handleTranslate}
@@ -124,14 +124,6 @@ export function Aside({ xyza, xyzb, xyzc, xyzd, xyze, handleTranslate, handleOri
             </button>
           </li>
         </XyzTransition>
-        <li className={display}>
-        <button 
-            className={"btn btn-link m-0 p-0 up" + Styles.focusable}
-            onClick={handleOriginal}
-          >
-            <BsTranslate className={`fs-4 ${Styles.transHov}`} style={{ color: "#96a4b3" }} />
-          </button>
-        </li>
         <XyzTransition
           id="upBtn"
           appearVisible
