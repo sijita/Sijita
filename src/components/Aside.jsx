@@ -3,6 +3,7 @@ import { XyzTransition } from "@animxyz/react";
 import { CgArrowUpR } from "react-icons/cg";
 import { FiFacebook, FiGithub } from "react-icons/fi";
 import { IoLogoWhatsapp, IoLogoInstagram } from "react-icons/io5";
+import { RiLinkedinBoxLine } from "react-icons/ri"
 import { BsTranslate } from "react-icons/bs";
 import { animateScroll as scroll } from "react-scroll";
 import Styles from "../styles/Aside.module.css";
@@ -92,6 +93,16 @@ export function Aside({ xyza, xyzb, xyzc, xyzd, xyze, handleTranslate}) {
           icon={[
             <FiGithub
               className={`fs-4 ${Styles.hovStroke}`}
+              style={{ color: "#96a4b3" }}
+            />,
+          ]}
+        />
+        <Red
+          xyz={xyzd}
+          href="https://www.linkedin.com/in/simon-jimenez-tamayo/"
+          icon={[
+            <RiLinkedinBoxLine
+              className={`fs-3 ${Styles.hovFill}`}
               style={{ color: "#96a4b3" }}
             />,
           ]}
