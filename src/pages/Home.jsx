@@ -128,7 +128,7 @@ const Home = () => {
     <React.Fragment>
       <Header
         logo={[
-          <XyzTransition appear xyz="fade-100% big-75% duration-20">
+          <XyzTransition appear xyz="fade-100% big-75% duration-10">
             <img
               src={Logo}
               alt="Logo"
@@ -138,7 +138,7 @@ const Home = () => {
           </XyzTransition>,
         ]}
         nombre={[
-          <XyzTransition appear xyz="fade-100% small-25% duration-15 delay-5">
+          <XyzTransition appear xyz="fade-100% small-25% duration-10 delay-5">
             <div className={Styles.title2}>
               <span className={Styles.brackets}>(</span>SIMÓN JIMÉNEZ TAMAYO
               <span className={Styles.brackets}>)</span>
@@ -146,14 +146,14 @@ const Home = () => {
           </XyzTransition>,
         ]}
         titulo1={[
-          <XyzTransition appear xyz="fade-100% small-25% duration-10 delay-15">
+          <XyzTransition appear xyz="fade-100% small-25% duration-10 delay-10">
             <div className={Styles.title3}>
               {translated ? "Designer" : "Diseñador"}
             </div>
           </XyzTransition>,
         ]}
         titulo2={[
-          <XyzTransition appear xyz="fade-100% left-50% duration-15 delay-20">
+          <XyzTransition appear xyz="fade-100% left-50% duration-15 delay-15">
             <div className={Styles.title4}> Front </div>
           </XyzTransition>,
         ]}
@@ -163,7 +163,7 @@ const Home = () => {
           </XyzTransition>,
         ]}
         titulo3={[
-          <XyzTransition appear xyz="fade-100% right-50% duration-15 delay-20">
+          <XyzTransition appear xyz="fade-100% right-50% duration-15 delay-15">
             <div className={Styles.title4}> End </div>
           </XyzTransition>,
         ]}

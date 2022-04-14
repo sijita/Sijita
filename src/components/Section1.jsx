@@ -1,5 +1,5 @@
 import "@animxyz/core";
-import { XyzTransition } from "@animxyz/react";
+import { XyzTransition, XyzTransitionGroup } from "@animxyz/react";
 import {
   DiHtml5,
   DiCss3,
@@ -36,7 +36,7 @@ export default function Section1({ titulo, descripcion }) {
           className="col fs-5 mt-5"
           style={{ color: "#96a4b3", overflow: "hidden", textAlign: "justify" }}
         >
-          <XyzTransition appearVisible xyz="fade-100% down-25% duration-15">
+          <XyzTransition appearVisible xyz="fade-100% down-25% duration-15 delay-0.5">
             <div>{descripcion}</div>
           </XyzTransition>
           <br />
@@ -52,7 +52,7 @@ export default function Section1({ titulo, descripcion }) {
               style={{
                 border: "1px solid #baff29",
                 borderImage: "linear-gradient(45deg, #baff29 0%, #3fea2f 100%)",
-                borderImageSlice: "1"
+                borderImageSlice: "1",
               }}
             />
           </div>
@@ -64,11 +64,12 @@ export default function Section1({ titulo, descripcion }) {
             Skills
           </h2>
         </XyzTransition>
-        <ul
-          className="row row-cols-1 row-cols-sm-2 mt-5 mb-0 mx-auto p-0 justify-content-center"
-          style={{ listStyle: "none" }}
-        >
-          <XyzTransition appearVisible xyz="fade-100% duration-25 small-25%">
+
+        <XyzTransitionGroup appearVisible className="item-group" xyz="fade-100% down-50% duration-15">
+          <ul
+            className="row row-cols-1 row-cols-sm-2 mt-5 mb-0 mx-auto p-0 justify-content-center"
+            style={{ listStyle: "none" }}
+          >
             <li
               className="col p-3 d-flex align-items-center justify-content-center"
               style={listStyle}
@@ -86,8 +87,6 @@ export default function Section1({ titulo, descripcion }) {
                 ></DiHtml5>
               </p>
             </li>
-          </XyzTransition>
-          <XyzTransition appearVisible xyz="fade-100% duration-25 small-25%">
             <li
               className="col p-3 d-flex align-items-center justify-content-center"
               style={listStyle}
@@ -103,8 +102,6 @@ export default function Section1({ titulo, descripcion }) {
                 />
               </p>
             </li>
-          </XyzTransition>
-          <XyzTransition appearVisible xyz="fade-100% duration-25 small-25%">
             <li
               className="col p-3 d-flex align-items-center justify-content-center"
               style={listStyle}
@@ -120,8 +117,6 @@ export default function Section1({ titulo, descripcion }) {
                 />
               </p>
             </li>
-          </XyzTransition>
-          <XyzTransition appearVisible xyz="fade-100% duration-25 small-25%">
             <li
               className="col p-3 d-flex align-items-center justify-content-center"
               style={listStyle}
@@ -137,8 +132,6 @@ export default function Section1({ titulo, descripcion }) {
                 />
               </p>
             </li>
-          </XyzTransition>
-          <XyzTransition appearVisible xyz="fade-100% duration-25 small-25%">
             <li
               className="col p-3 d-flex align-items-center justify-content-center"
               style={listStyle}
@@ -154,8 +147,6 @@ export default function Section1({ titulo, descripcion }) {
                 />
               </p>
             </li>
-          </XyzTransition>
-          <XyzTransition appearVisible xyz="fade-100% duration-25 small-25%">
             <li
               className="col p-3 d-flex align-items-center justify-content-center"
               style={listStyle}
@@ -170,8 +161,8 @@ export default function Section1({ titulo, descripcion }) {
                 />
               </p>
             </li>
-          </XyzTransition>
-        </ul>
+          </ul>
+        </XyzTransitionGroup>
       </div>
     </div>
   );
