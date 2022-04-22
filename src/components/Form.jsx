@@ -132,7 +132,7 @@ export default function Form({tittle, input1, input2, input3, btnText}) {
               <h2 className="mb-5 text-white">{tittle}</h2>
             </div>
           </XyzTransition>
-          <XyzTransition appearVisible xyz="fade-100% down-50% duration-15">
+          <XyzTransition appearVisible xyz="fade-100% down-5 duration-15">
             <div>
               <TextInput
                 label={[
@@ -150,7 +150,7 @@ export default function Form({tittle, input1, input2, input3, btnText}) {
           </XyzTransition>
           <XyzTransition
             appearVisible
-            xyz="fade-100% down-50% duration-15 delay-5"
+            xyz="fade-100% down-5 duration-15"
           >
             <div>
               <EmailInput
@@ -169,7 +169,7 @@ export default function Form({tittle, input1, input2, input3, btnText}) {
           </XyzTransition>
           <XyzTransition
             appearVisible
-            xyz="fade-100% down-50% duration-15 delay-5"
+            xyz="fade-100% down-5 duration-15"
           >
             <div>
               <TextAreaInput
@@ -188,7 +188,7 @@ export default function Form({tittle, input1, input2, input3, btnText}) {
           </XyzTransition>
           <XyzTransition
             appearVisible
-            xyz="fade-100% down-50% duration-15 delay-5"
+            xyz="fade-100% down-100% duration-20"
           >
             <div>
               <button
