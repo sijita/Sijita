@@ -7,6 +7,7 @@ import {
   DiReact,
   DiBootstrap,
 } from "react-icons/di";
+import { SiTailwindcss } from 'react-icons/si'
 import { SiAdobephotoshop } from "react-icons/si";
 import fotoPersonal from "../images/fotoPersonal.jpg";
 
@@ -140,7 +141,37 @@ export default function Section1({ titulo, descripcion }) {
                 className="d-flex m-0 align-items-center gap-2 fs-5"
                 style={{ color: "#96a4b3" }}
               >
+                Tailwind&nbsp;{" "}
+                <SiTailwindcss
+                  className="fs-5"
+                  style={{ fill: "url(#green-gradient)" }}
+                />
+              </p>
+            </li>
+            <li
+              className="col p-3 d-flex align-items-center justify-content-center"
+              style={listStyle}
+            >
+              <p
+                className="d-flex m-0 align-items-center gap-2 fs-5"
+                style={{ color: "#96a4b3" }}
+              >
                 ReactJS&nbsp;{" "}
+                <DiReact
+                  className="fs-4"
+                  style={{ fill: "url(#green-gradient)" }}
+                />
+              </p>
+            </li>
+            <li
+              className="col p-3 d-flex align-items-center justify-content-center"
+              style={listStyle}
+            >
+              <p
+                className="d-flex m-0 align-items-center gap-2 fs-5"
+                style={{ color: "#96a4b3" }}
+              >
+                React Native&nbsp;{" "}
                 <DiReact
                   className="fs-4"
                   style={{ fill: "url(#green-gradient)" }}
