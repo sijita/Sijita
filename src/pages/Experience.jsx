@@ -58,6 +58,7 @@ export default function Experience() {
         text3={translated ? "Creation and editing of videos for YouTube channels" : "Creación y edición de videos para canales de YouTube"}
         text4={translated ? "Hotel page" : "Página hotelera"}
         text5={translated ? "School page" : "Página escolar"}
+        text6={translated ? "App Rick and Morty" : "App de Rick y Morty"}
       />
       <Section4
         tittle={translated ? "Services" : "Servicios"}

@@ -53,6 +53,7 @@ export default function Section2({tittle, subtittle1, subtittle2, year1, year2, 
                                     <Lists number="2." tittle="Ecommerce" />
                                     <Lists number="3." tittle="Ecommerce" />
                                     <Lists number="4." tittle={text5} />
+                                    <Lists number="5." tittle={text6} />
                                 </li>
                             </XyzTransition>
                         </ul>
