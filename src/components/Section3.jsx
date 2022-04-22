@@ -4,6 +4,7 @@ import Screen from "../images/screen.jpg";
 import Screen2 from "../images/screen2.jpg";
 import Screen3 from "../images/screen3.jpg";
 import Screen4 from "../images/screen4.jpg";
+import Screen5 from "../images/screen5.jpg"
 import fullScreen2 from "../images/fullScreen2.png";
 import fullScreen4 from "../images/fullScreen4.png";
 
@@ -19,6 +20,7 @@ function Cards({ tittle, screen, href }) {
             border: "1px solid #baff29",
             borderImage: "linear-gradient(45deg, #baff29 0%, #3fea2f 100%)",
             borderImageSlice: "1",
+            width: "580px",
           }}
         />
       </a>
@@ -31,7 +33,7 @@ function Cards({ tittle, screen, href }) {
   );
 }
 
-export default function Section3({tittle, subtittle1, subtittle2}) {
+export default function Section3({tittle, subtittle1, subtittle2, subtittle3}) {
   return (
     <section id="Proyectos">
       <div className="container p-5 mt-5">
@@ -83,6 +85,18 @@ export default function Section3({tittle, subtittle1, subtittle2}) {
                 tittle={subtittle2}
                 screen={Screen4}
                 href={fullScreen4}
+              />
+            </div>
+          </XyzTransition>
+          <XyzTransition
+            appearVisible
+            xyz="fade-100% fade small duration-15 delay-1.5"
+          >
+            <div>
+              <Cards
+                tittle={subtittle3}
+                screen={Screen5}
+                href="https://github.com/sijita/RickAndMortyAPI_RNative"
               />
             </div>
           </XyzTransition>

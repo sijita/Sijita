@@ -50,6 +50,7 @@ export default function Projects() {
         tittle={translated ? "Projects" : "Proyectos"}
         subtittle1={translated ? "Ambeyma hotel" : "Hotel Ambeyma"}
         subtittle2={translated ? "School page" : "Página escolar"}
+        subtittle3={translated ? "Rick and Morty App" : "App de Rick y Morty"}
       />
       <Section4
         tittle={translated ? "Services" : "Servicios"}
