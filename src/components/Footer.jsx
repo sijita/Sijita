@@ -35,6 +35,13 @@ export function Footer() {
                         </a>
                       </li>
                     </XyzTransition>
+                    <XyzTransition appear xyz="fade-100% down-100% duration-25 delay-6">
+                      <li className="mx-3">
+                        <a href="https://www.linkedin.com/in/simon-jimenez-tamayo/" target="_blank" rel="noreferrer">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 25 25" fill="none" stroke="#96a4b3" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                      </li>
+                    </XyzTransition>
                 </ul>
                 <p className="text-center text-muted font-monospace m-0 p-5">Simón Jiménez Tamayo 💚 2022</p>
             </div>

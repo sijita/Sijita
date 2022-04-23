@@ -37,7 +37,7 @@ export default function Section1({ titulo, descripcion }) {
           className="col fs-5 mt-5"
           style={{ color: "#96a4b3", overflow: "hidden", textAlign: "justify" }}
         >
-          <XyzTransition appearVisible xyz="fade-100% down-25% duration-15 delay-0.5">
+          <XyzTransition appearVisible xyz="fade-100% down-25% duration-15">
             <div>{descripcion}</div>
           </XyzTransition>
           <br />
