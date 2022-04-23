@@ -51,7 +51,7 @@ export default function Experience() {
         tittle={translated ? "Experience" : "Experiencia"}
         subtittle1={translated ? "Graphic designer" : "Diseñador gráfico"}
         year1={translated ? "2013 - PRESENT" : "2013 - PRESENTE"}
-        subtittle2={translated ? "Web developer" : "Desarrollador web"}
+        subtittle2={translated ? "Web developer" : "Desarrollador front"}
         year2={translated ? "2019 - PRESENT" : "2019 - PRESENTE"}
         text1={translated ? "Creation of posters and flyers for different parties and events" : "Creación de posters y flyers para diferentes fiestas y eventos"}
         text2={translated ? "Creation of logos for individuals and small businesses" : "Creación de logos para personas y pequeñas empresas"}
