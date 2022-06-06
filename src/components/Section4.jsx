@@ -1,5 +1,5 @@
 import "@animxyz/core";
-import { XyzTransition, XyzTransitionGroup } from "@animxyz/react";
+import { XyzTransition } from "@animxyz/react";
 import {
   IoPhonePortrait,
   IoRocket,
@@ -58,25 +58,25 @@ export default function Section4({
         style={{ overflow: "hidden" }}
       >
         <Card
-          xyz="fade-100% down-50% duration-15"
+          xyz="fade-100% down-50% duration-20"
           tittle={titulo1}
           text={texto1}
           icon={[<IoColorWandSharp className="fs-2 my-3" style={textStyle} />]}
         />
         <Card
-          xyz="fade-100% down-50% duration-15 delay-2"
+          xyz="fade-100% down-50% duration-20"
           tittle={titulo2}
           text={texto2}
           icon={[<IoPhonePortrait className="fs-2 my-3" style={textStyle} />]}
         />
         <Card
-            xyz="fade-100% down-50% duration-15 delay-4"
+            xyz="fade-100% down-50% duration-20"
           tittle={titulo3}
           text={texto3}
           icon={[<IoRocket className="fs-2 my-3" style={textStyle} />]}
         />
         <Card
-        xyz="fade-100% down-50% duration-15 delay-6"
+        xyz="fade-100% down-50% duration-20"
           tittle={titulo4}
           text={texto4}
           icon={[<IoTrophySharp className="fs-2 my-3" style={textStyle} />]}
