@@ -148,7 +148,7 @@ const Home = () => {
         titulo1={[
           <XyzTransition appear xyz="fade-100% small-25% duration-10 delay-10">
             <div className={Styles.title3}>
-              {translated ? "Designer" : "Diseñador"}
+              {translated ? "Developer" : "Desarrollador"}
             </div>
           </XyzTransition>,
         ]}

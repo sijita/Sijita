@@ -7,11 +7,11 @@ import Section3 from "../components/Section3";
 import Section4 from "../components/Section4";
 import Styles from "../styles/Header.module.css";
 import Logo from "../images/logo3.png";
-import UserContext from "../context/AuthContext"
-import { useContext } from "react"
+import UserContext from "../context/AuthContext";
+import { useContext } from "react";
 
 export default function Projects() {
-  const { translated, handleTranslate } = useContext(UserContext)
+  const { translated, handleTranslate } = useContext(UserContext);
   return (
     <React.Fragment>
       <Header
@@ -31,7 +31,7 @@ export default function Projects() {
         ]}
         titulo1={[
           <div className={Styles.title3}>
-            {translated ? "Designer" : "Diseñador"}
+            {translated ? "Developer" : "Desarrollador"}
           </div>,
         ]}
         titulo2={[<div className={Styles.title4}> Front </div>]}

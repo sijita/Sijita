@@ -32,7 +32,7 @@ export default function Experience() {
         ]}
         titulo1={[
           <div className={Styles.title3}>
-            {translated ? "Designer" : "Diseñador"}
+            {translated ? "Developer" : "Desarrollador"}
           </div>,
         ]}
         titulo2={[<div className={Styles.title4}> Front </div>]}
